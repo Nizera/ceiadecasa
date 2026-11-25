@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dez receitas para a ceia de Natal, com cardápio para seis, lista de compras e cronograma de preparo.">
+  <title>Ceia de Casa | Receitas de Natal</title>
+  <link rel="stylesheet" href="./estilo.css">
+  <script src="./checkout.js" defer></script>
+  <script src="./cardapio.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="limite barra">
+      <a class="marca" href="#" aria-label="Ceia de Casa, início">Ceia de Casa<span>.</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#amostra">Receita grátis</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="abertura limite" aria-labelledby="titulo">
+      <div class="abertura-texto">
+        <p class="rotulo">E-book de receitas de Natal</p>
+        <h1 id="titulo">Uma ceia de Natal com sabor de casa.</h1>
+        <p class="resumo">Dez receitas, um cardápio para seis e um plano para chegar à hora da ceia com a sobremesa pronta e o assado descansando.</p>
+        <a class="botao" href="#amostra" data-oferta>Experimentar uma receita</a>
+      </div>
+      <figure class="foto">
+        <img src="./assets/mesa-natalina.jpg" width="1024" height="1536" alt="Mesa de Natal com frango assado, rodelas de laranja, farofa e arroz festivo">
+      </figure>
+    </section>
+
+    <section class="cardapio" id="cardapio" aria-labelledby="titulo-cardapio">
+      <div class="limite conteudo">
+        <div class="cardapio-abertura">
+          <div>
+            <p class="rotulo">O cardápio para seis</p>
+            <h2 id="titulo-cardapio">Da primeira torrada ao último pedaço de pavê</h2>
+          </div>
+          <img src="./assets/mesa-posta.jpg" width="1536" height="1024" loading="lazy"
+            alt="Mesa posta com frango assado, arroz, salada e uma jarra de ponche">
+        </div>
+        <dl class="menu">
+          <div><dt>Para abrir</dt><dd>Crostini de ricota e laranja</dd></div>
+          <div><dt>Para a mesa</dt><dd>Frango com laranja e alecrim, arroz com damasco, farofa de castanha e salada de maçã</dd></div>
+          <div><dt>Para brindar</dt><dd>Ponche de uva e cítricos, sem álcool</dd></div>
+          <div><dt>Para fechar</dt><dd>Pavê de chocolate e laranja</dd></div>
+        </dl>
+        <div class="carrossel">
+          <div class="carrossel-topo">
+            <h3 id="titulo-receitas">As 10 receitas do e-book</h3>
+            <div class="carrossel-controles" hidden>
+              <span id="posicao-receitas"></span>
+              <button type="button" data-anterior aria-controls="lista-receitas" aria-label="Receita anterior">Anterior</button>
+              <button type="button" data-proxima aria-controls="lista-receitas" aria-label="Próxima receita">Próxima</button>
+            </div>
+          </div>
+          <ul class="carrossel-lista" id="lista-receitas" role="list" tabindex="0" aria-labelledby="titulo-receitas">
+            <li class="prato">
+              <img src="./assets/receitas/crostini.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Entrada</p>
+                <h4>Crostini de ricota e laranja</h4>
+                <p>Torradas crocantes com creme de ricota, raspas de laranja e mel.</p>
+              </div>
+            </li>
+            <li class="prato">
+              <img src="./assets/receitas/pate.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Entrada</p>
+                <h4>Patê de feijão-branco e limão</h4>
+                <p>Patê cremoso com páprica defumada, cenoura e pepino em palitos.</p>
+              </div>
+            </li>
+            <li class="prato">
+              <img src="./assets/receitas/frango.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Prato principal</p>
+                <h4>Frango assado com laranja e alecrim</h4>
+                <p>Frango inteiro dourado com cebolas assadas e caldo de laranja.</p>
+              </div>
+            </li>
+            <li class="prato">
+              <img src="./assets/receitas/lombo.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Prato principal</p>
+                <h4>Lombo ao molho de abacaxi</h4>
+                <p>Lombo fatiado com molho agridoce de abacaxi e mostarda.</p>
+              </div>
+            </li>
+            <li class="prato">
+              <img src="./assets/receitas/arroz.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Acompanhamento</p>
+                <h4>Arroz festivo com damasco</h4>
+                <p>Arroz soltinho com damasco, amêndoas tostadas e salsinha.</p>
+              </div>
+            </li>
+            <li class="prato">
+              <img src="./assets/farofa-de-castanha.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Acompanhamento</p>
+                <h4>Farofa de cebola e castanha</h4>
+                <p>Farofa crocante com cebola dourada e castanha-de-caju.</p>
+                <a href="#amostra">Ver receita grátis</a>
+              </div>
+            </li>
+            <li class="prato">
+              <img src="./assets/receitas/salada.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Acompanhamento</p>
+                <h4>Salada de maçã e repolho</h4>
+                <p>Maçã, repolho roxo e cenoura com molho de iogurte e limão.</p>
+              </div>
+            </li>
+            <li class="prato">
+              <img src="./assets/receitas/rabanada.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Sobremesa</p>
+                <h4>Rabanadas de forno com canela</h4>
+                <p>Fatias douradas, macias por dentro, com açúcar e canela.</p>
+              </div>
+            </li>
+            <li class="prato">
+              <img src="./assets/pave-de-chocolate.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Sobremesa</p>
+                <h4>Pavê de chocolate e laranja</h4>
+                <p>Camadas de biscoito e creme de laranja com cobertura de chocolate.</p>
+              </div>
+            </li>
+            <li class="prato">
+              <img src="./assets/receitas/ponche.jpg" width="1536" height="1024" loading="lazy" alt="">
+              <div class="prato-texto">
+                <p class="prato-categoria">Bebida</p>
+                <h4>Ponche de uva e cítricos</h4>
+                <p>Uma bebida sem álcool com uva, laranja, limão e hortelã.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="limite amostra" id="amostra" aria-labelledby="titulo-amostra">
+      <div>
+        <p class="rotulo">Receita grátis</p>
+        <h2 id="titulo-amostra">Farofa de cebola e castanha</h2>
+        <p>Um acompanhamento crocante de frigideira para servir com os assados.</p>
+        <p class="metadados">25 minutos · 6 porções</p>
+      </div>
+      <div class="amostra-prato">
+        <img src="./assets/farofa-de-castanha.jpg" width="1536" height="1024" loading="lazy"
+          alt="Farofa dourada de mandioca com cebola, castanhas de caju e salsinha">
+        <details>
+          <summary>Ver ingredientes e preparo</summary>
+          <div class="receita">
+            <h3>Ingredientes</h3>
+            <ul>
+              <li>160 g de farinha de mandioca torrada</li>
+              <li>2 cebolas médias em meias-luas finas</li>
+              <li>60 g de castanha-de-caju torrada e picada</li>
+              <li>40 g de manteiga e 1 colher (sopa) de azeite</li>
+              <li>3 colheres (sopa) de salsinha picada</li>
+              <li>Sal e pimenta-do-reino a gosto</li>
+            </ul>
+            <h3>Modo de preparo</h3>
+            <ol>
+              <li>Aqueça a manteiga e o azeite. Junte a cebola e uma pitada de sal. Mexa em fogo médio-baixo por 12 a 15 minutos, até dourar.</li>
+              <li>Acrescente a farinha aos poucos e mexa por 3 a 5 minutos, até ficar aromática e crocante.</li>
+              <li>Desligue o fogo. Misture a castanha e a salsinha e ajuste o sal e a pimenta.</li>
+            </ol>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="oferta" id="ebook" aria-labelledby="titulo-ebook">
+      <div class="limite oferta-dentro">
+        <div>
+          <p class="rotulo">O que vem no PDF</p>
+          <h2 id="titulo-ebook">Ceia de Casa</h2>
+          <img class="capa" src="./assets/capa-ceia-de-casa.jpg" width="480" height="832" loading="lazy"
+            alt="Capa do PDF Ceia de Casa, com o frango assado ao centro da mesa">
+        </div>
+        <div>
+          <ul>
+            <li>10 receitas ilustradas com rendimento, tempo estimado e modo de preparo</li>
+            <li>Cardápio para seis pessoas e lista de compras por seção</li>
+            <li>Cronograma da véspera até a hora de servir</li>
+          </ul>
+          <h3 class="titulo-bonus">Bônus incluídos</h3>
+          <ul>
+            <li><strong>Planner da Ceia</strong> para montar seu cardápio, organizar as compras e dividir as tarefas.</li>
+            <li><strong>Kit Mesa de Natal</strong> com menus, cartões de lugar e identificadores de pratos para imprimir.</li>
+          </ul>
+          <p id="status-compra">A venda do e-book ainda não está aberta.</p>
+          <a class="botao" id="comprar" hidden>Comprar na Flowyn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="limite rodape">Ceia de Casa · Receitas de Natal</footer>
+</body>
+</html>
