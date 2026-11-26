@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Dez receitas para a ceia de Natal, com cardápio para seis, lista de compras e cronograma de preparo.">
+  <meta name="description" content="Dez receitas para a ceia de Natal, com cardápio para seis, lista de compras, cronograma de preparo e dois bônus para imprimir.">
   <title>Ceia de Casa | Receitas de Natal</title>
   <link rel="stylesheet" href="./estilo.css">
   <script src="./checkout.js" defer></script>
@@ -15,6 +15,7 @@
       <a class="marca" href="#" aria-label="Ceia de Casa, início">Ceia de Casa<span>.</span></a>
       <nav aria-label="Navegação principal">
         <a href="#cardapio">Cardápio</a>
+        <a href="#bonus">Bônus</a>
         <a href="#amostra">Receita grátis</a>
       </nav>
     </div>
@@ -25,7 +26,10 @@
         <p class="rotulo">E-book de receitas de Natal</p>
         <h1 id="titulo">Uma ceia de Natal com sabor de casa.</h1>
         <p class="resumo">Dez receitas, um cardápio para seis e um plano para chegar à hora da ceia com a sobremesa pronta e o assado descansando.</p>
-        <a class="botao" href="https://www.flowyn.com.br/checkout/afe9b4b0-6f23-4266-b1b1-6e3b22aeee6a" data-checkout>Comprar por R$ 14,90</a>
+        <div class="abertura-acoes">
+          <a class="botao" href="https://www.flowyn.com.br/checkout/afe9b4b0-6f23-4266-b1b1-6e3b22aeee6a" data-checkout>Comprar por R$ 14,90</a>
+          <a class="link-bonus" href="#bonus">Ver os 2 bônus incluídos</a>
+        </div>
       </div>
       <figure class="foto">
         <img src="./assets/mesa-natalina.jpg" width="1024" height="1536" alt="Mesa de Natal com frango assado, rodelas de laranja, farofa e arroz festivo">
@@ -144,6 +148,36 @@
       </div>
     </section>
 
+    <section class="limite bonus" id="bonus" aria-labelledby="titulo-bonus">
+      <p class="rotulo">2 bônus para imprimir</p>
+      <h2 id="titulo-bonus">Organize a ceia e prepare a mesa</h2>
+      <p class="bonus-intro">Os dois kits em PDF acompanham o e-book na mesma compra.</p>
+      <div class="bonus-lista">
+        <article class="bonus-cartao">
+          <div class="bonus-previa bonus-previa-planner">
+            <img src="./assets/bonus/planner-compras.jpg" width="340" height="480" loading="lazy" alt="">
+            <img src="./assets/bonus/planner-cardapio.jpg" width="340" height="480" loading="lazy"
+              alt="Prévias das folhas de cardápio e lista de compras do Planner da Ceia">
+          </div>
+          <div class="bonus-texto">
+            <h3>Planner da Ceia</h3>
+            <p>Três folhas A4 para montar seu cardápio, planejar as porções, organizar as compras e dividir as tarefas até a hora de servir.</p>
+          </div>
+        </article>
+        <article class="bonus-cartao">
+          <div class="bonus-previa bonus-previa-mesa">
+            <img src="./assets/bonus/kit-cartoes.jpg" width="340" height="480" loading="lazy" alt="">
+            <img src="./assets/bonus/kit-menus.jpg" width="340" height="480" loading="lazy"
+              alt="Prévias dos menus e cartões de lugar do Kit Mesa de Natal">
+          </div>
+          <div class="bonus-texto">
+            <h3>Kit Mesa de Natal</h3>
+            <p>Menus, cartões de lugar e identificadores de pratos para imprimir em A4, preencher e usar na mesa.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="limite amostra" id="amostra" aria-labelledby="titulo-amostra">
       <div>
         <p class="rotulo">Receita grátis</p>
@@ -179,22 +213,21 @@
 
     <section class="oferta" id="ebook" aria-labelledby="titulo-ebook">
       <div class="limite oferta-dentro">
-        <div>
-          <p class="rotulo">O que vem no PDF</p>
+        <img class="capa" src="./assets/capa-ceia-de-casa.jpg" width="480" height="832" loading="lazy"
+          alt="Capa do e-book Ceia de Casa">
+        <div class="oferta-cabecalho">
+          <p class="rotulo">E-book + 2 bônus</p>
           <h2 id="titulo-ebook">Ceia de Casa</h2>
-          <img class="capa" src="./assets/capa-ceia-de-casa.jpg" width="480" height="832" loading="lazy"
-            alt="Capa do PDF Ceia de Casa, com o frango assado ao centro da mesa">
         </div>
-        <div>
+        <div class="oferta-detalhes">
+          <div class="oferta-bonus">
+            <strong>Planner da Ceia + Kit Mesa de Natal</strong>
+            <p>Os dois bônus estão incluídos no preço do e-book.</p>
+          </div>
           <ul>
             <li>10 receitas ilustradas com rendimento, tempo estimado e modo de preparo</li>
             <li>Cardápio para seis pessoas e lista de compras por seção</li>
             <li>Cronograma da véspera até a hora de servir</li>
-          </ul>
-          <h3 class="titulo-bonus">Bônus incluídos</h3>
-          <ul>
-            <li><strong>Planner da Ceia</strong> para montar seu cardápio, organizar as compras e dividir as tarefas.</li>
-            <li><strong>Kit Mesa de Natal</strong> com menus, cartões de lugar e identificadores de pratos para imprimir.</li>
           </ul>
           <a class="botao" href="https://www.flowyn.com.br/checkout/afe9b4b0-6f23-4266-b1b1-6e3b22aeee6a" data-checkout>Comprar por R$ 14,90</a>
           <p class="entrega-compra">Pagamento único na Flowyn. Acesso digital após a confirmação.</p>
