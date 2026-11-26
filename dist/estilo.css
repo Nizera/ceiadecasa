@@ -101,7 +101,7 @@ summary { cursor: pointer; font-weight: 700; }
 .capa { display: block; width: min(100%, 14rem); height: auto; border: 1px solid #0002; border-radius: .2rem; box-shadow: .3rem .55rem 1.15rem #20372d26; }
 .oferta ul { margin: 0; }
 .titulo-bonus { margin: 1.35rem 0 .5rem; font: bold 1.4rem/1.15 Georgia, serif; }
-#status-compra { margin-top: 1rem; color: var(--vinho); }
+.entrega-compra { margin-top: .65rem; font-size: .9rem; }
 .rodape { padding-block: 1.45rem; font-size: .9rem; }
 
 @media (max-width: 48rem) {
